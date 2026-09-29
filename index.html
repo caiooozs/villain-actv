@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR" data-bs-theme="dark">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,29 +13,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80" tabindex="0">
-    <!-- Símbolo reutilizável: círculo dividido por três linhas -->
-    <svg width="0" height="0" class="position-absolute" aria-hidden="true">
-      <symbol id="nexus-symbol" viewBox="0 0 100 100">
-        <circle cx="50" cy="50" r="38" fill="none" stroke="currentColor" stroke-width="7" />
-        <line x1="50" y1="0" x2="50" y2="50" stroke="currentColor" stroke-width="7" />
-        <line x1="50" y1="50" x2="18" y2="30" stroke="currentColor" stroke-width="7" />
-        <line x1="50" y1="50" x2="78" y2="80" stroke="currentColor" stroke-width="7" />
-      </symbol>
-    </svg>
-
-    <header>
-      <nav id="navbar" class="navbar navbar-expand-lg fixed-top nx-navbar">
+  <body style="background-color: #0a0a0a; color: #e0e0e0;">
+    <header style="background-color: #1a1a1a; padding: 1.5rem 0; border-bottom: 1px solid #333;">
+      <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
-            <svg class="nx-logo" aria-hidden="true"><use href="#nexus-symbol" /></svg>
-            <span class="nx-brand">NEXUS</span>
-          </a>
+          <a class="navbar-brand" href="#" style="font-size: 1.5rem; font-weight: bold;">NEXUS</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -43,12 +30,12 @@
             data-bs-target="#menu"
             aria-controls="menu"
             aria-expanded="false"
-            aria-label="Abrir menu"
+            aria-label="Menu"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="menu">
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto gap-3">
               <li class="nav-item"><a class="nav-link" href="#ficha">Ficha</a></li>
               <li class="nav-item"><a class="nav-link" href="#origem">Origem</a></li>
               <li class="nav-item"><a class="nav-link" href="#projeto-zero">Projeto Zero</a></li>
@@ -62,94 +49,66 @@
 
     <main>
       <!-- HERO -->
-      <section id="inicio" class="nx-hero">
-        <div class="nx-hero-glow" data-parallax="0.3" aria-hidden="true"></div>
-        <div class="nx-rain" data-parallax="0.55" aria-hidden="true"></div>
-        <svg class="nx-bg-symbol nx-bg-symbol-hero" data-parallax="0.45" aria-hidden="true"><use href="#nexus-symbol" /></svg>
-        <div class="container position-relative">
-          <div class="row align-items-center g-5">
-            <div class="col-lg-6 order-2 order-lg-1" data-parallax="0.25">
-              <p class="nx-kicker mb-3">
-                <span class="nx-dot"></span> Arquivo confidencial · Novaris
+      <section id="inicio" style="padding: 4rem 0; background: linear-gradient(135deg, #0a0a0a 0%, #1a0f2e 100%);">
+        <div class="container">
+          <div class="row align-items-center gap-5">
+            <div class="col-lg-6">
+              <h1 style="font-size: 3.5rem; font-weight: bold; margin-bottom: 1rem;">NEXUS</h1>
+              <h2 style="font-size: 1.5rem; color: #a8a8a8; margin-bottom: 2rem;">O Arquiteto do Vazio</h2>
+              <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 2rem;">
+                Elias Veyron era um cientista brilhante que criou uma IA para controlar a cidade. Depois de um acidente que o deixou traumatizado, ele decidiu que a humanidade precisava ser controlada para ser salva.
               </p>
-              <h1 class="nx-title glitch" data-text="NEXUS">NEXUS</h1>
-              <h2 class="nx-subtitle">O Arquiteto do Vazio</h2>
-              <p class="nx-quote mt-4">
-                <span id="typed"></span><span class="nx-caret">_</span>
-              </p>
-              <div class="d-flex flex-wrap gap-3 mt-4">
-                <a href="#ficha" class="btn nx-btn">Acessar arquivo</a>
-                <a href="#projeto-zero" class="btn nx-btn-outline">Projeto Zero</a>
+              <div class="d-flex gap-3">
+                <a href="#ficha" class="btn" style="background-color: #7c3aed; color: white; padding: 0.7rem 2rem;">Ver Ficha</a>
+                <a href="#projeto-zero" class="btn" style="background-color: #333; color: white; padding: 0.7rem 2rem;">Projeto Zero</a>
               </div>
             </div>
-            <div class="col-lg-6 order-1 order-lg-2" data-parallax="0.1">
-              <div class="nx-portrait">
-                <img
-                  src="public/vilao.png"
-                  alt="Nexus, homem de cabelo escuro e sobretudo preto diante de um símbolo circular em neon violeta"
-                  class="img-fluid"
-                />
-                <div class="nx-scan" aria-hidden="true"></div>
-              </div>
+            <div class="col-lg-6">
+              <img
+                src="public/vilao.png"
+                alt="Nexus"
+                class="img-fluid"
+                style="max-width: 100%; border-radius: 8px;"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Faixa com texto correndo na horizontal -->
-      <div class="nx-band" data-parallax-root aria-hidden="true">
-        <div class="nx-band-row" data-parallax-x="0.6">PROJETO ZERO · CONTROLE TOTAL · NOVARIS ◆ PROJETO ZERO · CONTROLE TOTAL · NOVARIS ◆ PROJETO ZERO · CONTROLE TOTAL · NOVARIS ◆ PROJETO ZERO · CONTROLE TOTAL · NOVARIS ◆ PROJETO ZERO · CONTROLE TOTAL · NOVARIS ◆ PROJETO ZERO · CONTROLE TOTAL · NOVARIS ◆</div>
-        <div class="nx-band-row nx-band-row-alt" data-parallax-x="-0.6">SE TUDO PODE SER CONECTADO · TUDO PODE SER CONTROLADO ◆ SE TUDO PODE SER CONECTADO · TUDO PODE SER CONTROLADO ◆ SE TUDO PODE SER CONECTADO · TUDO PODE SER CONTROLADO ◆ SE TUDO PODE SER CONECTADO · TUDO PODE SER CONTROLADO ◆ SE TUDO PODE SER CONECTADO · TUDO PODE SER CONTROLADO ◆ SE TUDO PODE SER CONECTADO · TUDO PODE SER CONTROLADO ◆</div>
-      </div>
-
       <!-- FICHA TÉCNICA -->
-      <section id="ficha" class="nx-section">
-        <div class="nx-bg-layer nx-bg-right" aria-hidden="true">
-          <span class="nx-bg-num" data-parallax="-0.2">01</span>
-          <svg class="nx-bg-symbol" data-parallax="0.4"><use href="#nexus-symbol" /></svg>
-        </div>
+      <section id="ficha" style="padding: 4rem 0; background-color: #0a0a0a;">
         <div class="container">
-          <p class="nx-label reveal">01 // Ficha técnica</p>
-          <h2 class="nx-heading reveal">Identificação</h2>
-          <div class="row g-4 mt-2">
-            <div class="col-lg-7 reveal" data-parallax="0.06">
-              <div class="nx-panel p-0">
-                <table class="table nx-table mb-0">
-                  <tbody>
-                    <tr><th>Nome</th><td>Nexus</td></tr>
-                    <tr><th>Nome verdadeiro</th><td>Elias Veyron</td></tr>
-                    <tr><th>Título</th><td>O Arquiteto do Vazio</td></tr>
-                    <tr><th>Idade</th><td>42 anos</td></tr>
-                    <tr><th>Altura</th><td>1,87 m</td></tr>
-                    <tr><th>Origem</th><td>Cidade de Novaris</td></tr>
-                    <tr><th>Profissão anterior</th><td>Cientista e engenheiro de sistemas</td></tr>
-                    <tr><th>Alinhamento</th><td><span class="badge nx-badge-danger">Vilão</span></td></tr>
-                  </tbody>
-                </table>
-              </div>
+          <h2 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 3rem;">Ficha Técnica</h2>
+          <div class="row gap-4">
+            <div class="col-lg-7">
+              <table class="table" style="background-color: #1a1a1a; border: 1px solid #333;">
+                <tbody>
+                  <tr><th style="width: 40%;">Nome</th><td>Nexus</td></tr>
+                  <tr><th>Nome verdadeiro</th><td>Elias Veyron</td></tr>
+                  <tr><th>Título</th><td>O Arquiteto do Vazio</td></tr>
+                  <tr><th>Idade</th><td>42 anos</td></tr>
+                  <tr><th>Altura</th><td>1,87 m</td></tr>
+                  <tr><th>Origem</th><td>Cidade de Novaris</td></tr>
+                  <tr><th>Profissão anterior</th><td>Cientista e engenheiro de sistemas</td></tr>
+                  <tr><th>Alinhamento</th><td><span class="badge" style="background-color: #d32f2f;">Vilão</span></td></tr>
+                </tbody>
+              </table>
             </div>
-            <div class="col-lg-5 d-flex flex-column gap-4" data-parallax="-0.08">
-              <div class="nx-panel reveal">
-                <p class="nx-label mb-2">Personalidade</p>
+            <div class="col-lg-5">
+              <div style="background-color: #1a1a1a; padding: 2rem; border-radius: 8px; border: 1px solid #333; margin-bottom: 2rem;">
+                <h3 style="font-size: 1.1rem; font-weight: bold; margin-bottom: 1rem;">Personalidade</h3>
                 <div class="d-flex flex-wrap gap-2">
-                  <span class="nx-chip">Calculista</span>
-                  <span class="nx-chip">Paciente</span>
-                  <span class="nx-chip">Manipulador</span>
-                  <span class="nx-chip">Extremamente inteligente</span>
+                  <span class="badge" style="background-color: #7c3aed;">Calculista</span>
+                  <span class="badge" style="background-color: #7c3aed;">Paciente</span>
+                  <span class="badge" style="background-color: #7c3aed;">Manipulador</span>
+                  <span class="badge" style="background-color: #7c3aed;">Inteligente</span>
                 </div>
               </div>
-              <div class="nx-panel reveal">
-                <p class="nx-label mb-1">Poder principal</p>
-                <p class="mb-3">Manipulação de redes e sistemas</p>
-                <p class="nx-label mb-1">Arma</p>
-                <p class="mb-0">Bastão tecnológico chamado <strong class="nx-accent">Null</strong></p>
-              </div>
-              <div class="nx-panel reveal d-flex align-items-center gap-3">
-                <svg class="nx-symbol-lg" aria-hidden="true"><use href="#nexus-symbol" /></svg>
-                <div>
-                  <p class="nx-label mb-1">Símbolo</p>
-                  <p class="mb-0">Um círculo dividido por três linhas</p>
-                </div>
+              <div style="background-color: #1a1a1a; padding: 2rem; border-radius: 8px; border: 1px solid #333;">
+                <h3 style="font-size: 1.1rem; font-weight: bold; margin-bottom: 1rem;">Info</h3>
+                <p><strong>Poder:</strong> Manipulação de redes e sistemas</p>
+                <p><strong>Arma:</strong> Bastão tecnológico chamado <em>Null</em></p>
+                <p style="margin-bottom: 0;"><strong>Símbolo:</strong> Um círculo dividido por três linhas</p>
               </div>
             </div>
           </div>
@@ -157,103 +116,70 @@
       </section>
 
       <!-- ORIGEM -->
-      <section id="origem" class="nx-section nx-section-alt">
-        <div class="nx-bg-layer nx-bg-left" aria-hidden="true">
-          <span class="nx-bg-num" data-parallax="-0.2">02</span>
-          <svg class="nx-bg-symbol" data-parallax="0.4"><use href="#nexus-symbol" /></svg>
-        </div>
+      <section id="origem" style="padding: 4rem 0; background-color: #1a0f2e;">
         <div class="container">
-          <p class="nx-label reveal">02 // Registro de origem</p>
-          <h2 class="nx-heading reveal">Quem é Nexus?</h2>
-          <div class="row mt-4">
+          <h2 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 3rem;">Quem é Nexus?</h2>
+          <div class="row">
             <div class="col-lg-8">
-              <ol class="nx-timeline">
-                <li class="reveal" data-parallax="0">
-                  <span class="nx-time">Antes</span>
-                  <p>
-                    Elias Veyron era um dos maiores cientistas de Novaris, uma cidade completamente
-                    dependente de tecnologia.
-                  </p>
-                </li>
-                <li class="reveal" data-parallax="0.03">
-                  <span class="nx-time">O projeto</span>
-                  <p>
-                    Ele criou o NEXUS, uma inteligência capaz de conectar todos os sistemas da cidade:
-                    hospitais, transportes, energia, segurança, bancos e comunicação. O projeto deveria
-                    tornar Novaris uma cidade perfeita.
-                  </p>
-                </li>
-                <li class="reveal nx-alert" data-parallax="0.06">
-                  <span class="nx-time">O acidente</span>
-                  <p>
-                    Durante um teste, um acidente destruiu o laboratório e matou várias pessoas próximas a
-                    Elias. Ele sobreviveu, mas passou a acreditar que o problema não era a tecnologia.
-                    <strong>Era a liberdade humana.</strong>
-                  </p>
-                </li>
-                <li class="reveal" data-parallax="0.09">
-                  <span class="nx-time">O desaparecimento</span>
+              <div style="border-left: 3px solid #7c3aed; padding-left: 2rem;">
+                <div style="margin-bottom: 2rem;">
+                  <h3 style="font-size: 1.2rem; font-weight: bold; color: #7c3aed; margin-bottom: 0.5rem;">Antes</h3>
+                  <p>Elias Veyron era um dos maiores cientistas de Novaris, uma cidade completamente dependente de tecnologia.</p>
+                </div>
+                <div style="margin-bottom: 2rem;">
+                  <h3 style="font-size: 1.2rem; font-weight: bold; color: #7c3aed; margin-bottom: 0.5rem;">O projeto</h3>
+                  <p>Ele criou o NEXUS, uma inteligência capaz de conectar todos os sistemas da cidade: hospitais, transportes, energia, segurança, bancos e comunicação. O projeto deveria tornar Novaris uma cidade perfeita.</p>
+                </div>
+                <div style="margin-bottom: 2rem; background-color: rgba(211, 47, 47, 0.1); padding: 1.5rem; border-radius: 8px;">
+                  <h3 style="font-size: 1.2rem; font-weight: bold; color: #ff6b6b; margin-bottom: 0.5rem;">O acidente</h3>
+                  <p>Durante um teste, um acidente destruiu o laboratório e matou várias pessoas próximas a Elias. Ele sobreviveu, mas passou a acreditar que o problema não era a tecnologia. <strong>Era a liberdade humana.</strong></p>
+                </div>
+                <div style="margin-bottom: 2rem;">
+                  <h3 style="font-size: 1.2rem; font-weight: bold; color: #7c3aed; margin-bottom: 0.5rem;">O desaparecimento</h3>
                   <p>Para Elias, seres humanos são imprevisíveis demais. Depois do acidente, ele desapareceu.</p>
-                </li>
-                <li class="reveal" data-parallax="0.12">
-                  <span class="nx-time">Hoje</span>
-                  <p>Anos depois, voltou como <strong class="nx-accent">Nexus</strong>.</p>
-                </li>
-              </ol>
+                </div>
+                <div>
+                  <h3 style="font-size: 1.2rem; font-weight: bold; color: #7c3aed; margin-bottom: 0.5rem;">Hoje</h3>
+                  <p>Anos depois, voltou como <strong style="color: #ffd700;">Nexus</strong>.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <!-- PROJETO ZERO -->
-      <section id="projeto-zero" class="nx-section">
-        <div class="nx-bg-layer nx-bg-right" aria-hidden="true">
-          <span class="nx-bg-num" data-parallax="-0.2">03</span>
-          <svg class="nx-bg-symbol" data-parallax="0.4"><use href="#nexus-symbol" /></svg>
-        </div>
+      <section id="projeto-zero" style="padding: 4rem 0; background-color: #0a0a0a;">
         <div class="container">
-          <p class="nx-label reveal">03 // Objetivo</p>
-          <h2 class="nx-heading reveal">Projeto Zero</h2>
-          <p class="nx-lead reveal">
-            Nexus quer criar uma sociedade completamente conectada onde ninguém possa tomar decisões
-            sozinho, assumindo o controle de toda a infraestrutura tecnológica de Novaris.
+          <h2 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 1rem;">Projeto Zero</h2>
+          <p style="font-size: 1.2rem; margin-bottom: 3rem; color: #b0b0b0;">
+            Nexus quer criar uma sociedade completamente conectada onde ninguém possa tomar decisões sozinho, assumindo o controle de toda a infraestrutura tecnológica de Novaris.
           </p>
 
-          <div class="nx-panel mt-4 reveal">
-            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
-              <span class="nx-mono">Sistemas sob controle</span>
-              <span class="nx-mono"><span id="zero-count">0</span>/7 · <span id="zero-status">standby</span></span>
-            </div>
-            <div class="progress nx-progress" role="progressbar" aria-label="Progresso do Projeto Zero" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
-              <div class="progress-bar" id="zero-bar"></div>
-            </div>
-
-            <div class="row row-cols-2 row-cols-md-4 row-cols-xl-7 g-3 mt-2" id="zero-systems">
-              <div class="col"><div class="nx-system"><span class="nx-sys-icon">🚦</span>Trânsito</div></div>
-              <div class="col"><div class="nx-system"><span class="nx-sys-icon">🏥</span>Hospitais</div></div>
-              <div class="col"><div class="nx-system"><span class="nx-sys-icon">⚡</span>Energia</div></div>
-              <div class="col"><div class="nx-system"><span class="nx-sys-icon">💰</span>Sistema financeiro</div></div>
-              <div class="col"><div class="nx-system"><span class="nx-sys-icon">📱</span>Comunicação</div></div>
-              <div class="col"><div class="nx-system"><span class="nx-sys-icon">📹</span>Câmeras</div></div>
-              <div class="col"><div class="nx-system"><span class="nx-sys-icon">🤖</span>Automação</div></div>
-            </div>
-
-            <div class="text-center mt-4">
-              <button class="btn nx-btn" id="zero-btn" type="button">Iniciar Projeto Zero</button>
+          <div style="background-color: #1a1a1a; padding: 2rem; border-radius: 8px; border: 1px solid #333; margin-bottom: 3rem;">
+            <h3 style="margin-bottom: 1rem;">Sistemas sob controle</h3>
+            <div class="row row-cols-2 row-cols-md-4 row-cols-xl-7 g-3">
+              <div class="col"><div style="text-align: center; padding: 1rem; background-color: #2a2a2a; border-radius: 6px;">🚦 Trânsito</div></div>
+              <div class="col"><div style="text-align: center; padding: 1rem; background-color: #2a2a2a; border-radius: 6px;">🏥 Hospitais</div></div>
+              <div class="col"><div style="text-align: center; padding: 1rem; background-color: #2a2a2a; border-radius: 6px;">⚡ Energia</div></div>
+              <div class="col"><div style="text-align: center; padding: 1rem; background-color: #2a2a2a; border-radius: 6px;">💰 Financeiro</div></div>
+              <div class="col"><div style="text-align: center; padding: 1rem; background-color: #2a2a2a; border-radius: 6px;">📱 Comunicação</div></div>
+              <div class="col"><div style="text-align: center; padding: 1rem; background-color: #2a2a2a; border-radius: 6px;">📹 Câmeras</div></div>
+              <div class="col"><div style="text-align: center; padding: 1rem; background-color: #2a2a2a; border-radius: 6px;">🤖 Automação</div></div>
             </div>
           </div>
 
-          <div class="row g-4 mt-4">
-            <div class="col-md-6 reveal" data-parallax="-0.05">
-              <div class="nx-panel h-100">
-                <p class="nx-label mb-2">A promessa</p>
-                <p class="mb-0">Eliminar guerras, crimes, corrupção e caos.</p>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div style="background-color: #1a3a1a; padding: 2rem; border-radius: 8px; border-left: 4px solid #4caf50;">
+                <h3 style="font-size: 1.2rem; margin-bottom: 1rem;">A promessa</h3>
+                <p>Eliminar guerras, crimes, corrupção e caos.</p>
               </div>
             </div>
-            <div class="col-md-6 reveal" data-parallax="0.07">
-              <div class="nx-panel nx-panel-danger h-100">
-                <p class="nx-label mb-2">O preço</p>
-                <p class="mb-0">A liberdade individual.</p>
+            <div class="col-md-6">
+              <div style="background-color: #3a1a1a; padding: 2rem; border-radius: 8px; border-left: 4px solid #d32f2f;">
+                <h3 style="font-size: 1.2rem; margin-bottom: 1rem;">O preço</h3>
+                <p>A liberdade individual.</p>
               </div>
             </div>
           </div>
@@ -261,80 +187,62 @@
       </section>
 
       <!-- MOTIVAÇÃO -->
-      <section id="motivacao" class="nx-section nx-section-alt nx-motivation">
-        <div class="nx-bg-layer nx-bg-left" aria-hidden="true">
-          <span class="nx-bg-num" data-parallax="-0.2">04</span>
-          <svg class="nx-bg-symbol" data-parallax="0.4"><use href="#nexus-symbol" /></svg>
-        </div>
-        <div class="container text-center">
-          <p class="nx-label reveal">04 // Motivação</p>
-          <blockquote class="nx-bigquote reveal" data-parallax="0.15">
+      <section id=”motivacao” style=”padding: 4rem 0; background-color: #1a0f2e; text-align: center;”>
+        <div class=”container”>
+          <blockquote style=”font-size: 1.8rem; font-style: italic; margin-bottom: 3rem; color: #fff;”>
             “O caos nasce quando milhões de pessoas acreditam que sabem o que estão fazendo.”
           </blockquote>
-          <div class="row justify-content-center mt-4">
-            <div class="col-lg-8 reveal" data-parallax="-0.05">
-              <p class="nx-lead">
-                Nexus não acredita que seja um vilão. Ele perdeu pessoas importantes por causa de decisões
-                humanas que considerava irracionais e, desde então, acredita que a humanidade precisa ser
-                controlada para ser protegida.
+          <div class=”row justify-content-center”>
+            <div class=”col-lg-8”>
+              <p style=”font-size: 1.1rem; line-height: 1.6; margin-bottom: 1.5rem;”>
+                Nexus não acredita que seja um vilão. Ele perdeu pessoas importantes por causa de decisões humanas que considerava irracionais e, desde então, acredita que a humanidade precisa ser controlada para ser protegida.
               </p>
-              <p class="nx-lead mb-0">
-                Seu objetivo não é destruir o mundo. É <strong class="nx-accent">“consertá-lo”</strong>.
+              <p style=”font-size: 1.1rem; line-height: 1.6;”>
+                Seu objetivo não é destruir o mundo. É <strong style=”color: #ffd700;”>”consertá-lo”</strong>.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Faixa com texto correndo na horizontal -->
-      <div class="nx-band" data-parallax-root aria-hidden="true">
-        <div class="nx-band-row" data-parallax-x="0.6">O ARQUITETO DO VAZIO · ELIAS VEYRON · NEXUS ◆ O ARQUITETO DO VAZIO · ELIAS VEYRON · NEXUS ◆ O ARQUITETO DO VAZIO · ELIAS VEYRON · NEXUS ◆ O ARQUITETO DO VAZIO · ELIAS VEYRON · NEXUS ◆ O ARQUITETO DO VAZIO · ELIAS VEYRON · NEXUS ◆ O ARQUITETO DO VAZIO · ELIAS VEYRON · NEXUS ◆</div>
-        <div class="nx-band-row nx-band-row-alt" data-parallax-x="-0.6">EMOÇÃO · IMPROVISO · SACRIFÍCIO · ERRO DE CÁLCULO ◆ EMOÇÃO · IMPROVISO · SACRIFÍCIO · ERRO DE CÁLCULO ◆ EMOÇÃO · IMPROVISO · SACRIFÍCIO · ERRO DE CÁLCULO ◆ EMOÇÃO · IMPROVISO · SACRIFÍCIO · ERRO DE CÁLCULO ◆ EMOÇÃO · IMPROVISO · SACRIFÍCIO · ERRO DE CÁLCULO ◆ EMOÇÃO · IMPROVISO · SACRIFÍCIO · ERRO DE CÁLCULO ◆</div>
-      </div>
-
       <!-- PODERES -->
-      <section id="poderes" class="nx-section">
-        <div class="nx-bg-layer nx-bg-right" aria-hidden="true">
-          <span class="nx-bg-num" data-parallax="-0.2">05</span>
-          <svg class="nx-bg-symbol" data-parallax="0.4"><use href="#nexus-symbol" /></svg>
-        </div>
+      <section id="poderes" style="padding: 4rem 0; background-color: #0a0a0a;">
         <div class="container">
-          <p class="nx-label reveal">05 // Capacidades</p>
-          <h2 class="nx-heading reveal">Poderes e habilidades</h2>
-          <div class="row g-4 mt-2">
-            <div class="col-md-6 col-lg-4 reveal" data-parallax="0">
-              <div class="nx-card">
-                <span class="nx-card-icon">🖥️</span>
-                <h3>Controle Digital</h3>
-                <p>Consegue invadir e controlar sistemas eletrônicos conectados à rede.</p>
+          <h2 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 3rem;">Poderes e habilidades</h2>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div style="background-color: #1a1a1a; padding: 2rem; border-radius: 8px; border: 1px solid #333; text-align: center;">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">🖥️</div>
+                <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Controle Digital</h3>
+                <p style="color: #b0b0b0; margin: 0;">Consegue invadir e controlar sistemas eletrônicos conectados à rede.</p>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 reveal" data-parallax="0.05">
-              <div class="nx-card">
-                <span class="nx-card-icon">🧠</span>
-                <h3>Superinteligência Estratégica</h3>
-                <p>Analisa grandes quantidades de informação e prevê possíveis comportamentos.</p>
+            <div class="col-md-6 col-lg-4">
+              <div style="background-color: #1a1a1a; padding: 2rem; border-radius: 8px; border: 1px solid #333; text-align: center;">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">🧠</div>
+                <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Superinteligência</h3>
+                <p style="color: #b0b0b0; margin: 0;">Analisa grandes quantidades de informação e prevê comportamentos.</p>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 reveal" data-parallax="0.1">
-              <div class="nx-card">
-                <span class="nx-card-icon">🔌</span>
-                <h3>Blackout</h3>
-                <p>Pode desligar temporariamente sistemas elétricos de uma região.</p>
+            <div class="col-md-6 col-lg-4">
+              <div style="background-color: #1a1a1a; padding: 2rem; border-radius: 8px; border: 1px solid #333; text-align: center;">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">🔌</div>
+                <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Blackout</h3>
+                <p style="color: #b0b0b0; margin: 0;">Pode desligar temporariamente sistemas elétricos de uma região.</p>
               </div>
             </div>
-            <div class="col-md-6 col-lg-6 reveal" data-parallax="0.02">
-              <div class="nx-card">
-                <span class="nx-card-icon">👁️</span>
-                <h3>Visão da Rede</h3>
-                <p>Através das câmeras e sensores da cidade, observa praticamente qualquer lugar conectado.</p>
+            <div class="col-md-6 col-lg-6">
+              <div style="background-color: #1a1a1a; padding: 2rem; border-radius: 8px; border: 1px solid #333; text-align: center;">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">👁️</div>
+                <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Visão da Rede</h3>
+                <p style="color: #b0b0b0; margin: 0;">Através das câmeras e sensores observa praticamente qualquer lugar conectado.</p>
               </div>
             </div>
-            <div class="col-md-12 col-lg-6 reveal" data-parallax="0.07">
-              <div class="nx-card">
-                <span class="nx-card-icon">🛰️</span>
-                <h3>Controle Remoto</h3>
-                <p>Pode assumir drones, robôs e outros dispositivos.</p>
+            <div class="col-md-6 col-lg-6">
+              <div style="background-color: #1a1a1a; padding: 2rem; border-radius: 8px; border: 1px solid #333; text-align: center;">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">🛰️</div>
+                <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Controle Remoto</h3>
+                <p style="color: #b0b0b0; margin: 0;">Pode assumir drones, robôs e outros dispositivos.</p>
               </div>
             </div>
           </div>
@@ -342,55 +250,46 @@
       </section>
 
       <!-- FRAQUEZA -->
-      <section id="fraqueza" class="nx-section nx-section-alt">
-        <div class="nx-bg-layer nx-bg-left" aria-hidden="true">
-          <span class="nx-bg-num" data-parallax="-0.2">06</span>
-          <svg class="nx-bg-symbol" data-parallax="0.4"><use href="#nexus-symbol" /></svg>
-        </div>
+      <section id="fraqueza" style="padding: 4rem 0; background-color: #1a0f2e;">
         <div class="container">
-          <div class="row align-items-center g-5">
-            <div class="col-lg-5 reveal" data-parallax="0.08">
-              <p class="nx-label">06 // Vulnerabilidade</p>
-              <h2 class="nx-heading">A falha no cálculo</h2>
-              <p class="nx-lead">
-                Nexus não consegue prever decisões verdadeiramente irracionais. Pessoas que agem por
-                <strong class="nx-accent">emoção</strong>, <strong class="nx-accent">improviso</strong> ou
-                <strong class="nx-accent">sacrifício</strong> escapam de seus cálculos.
+          <div class="row gap-5 align-items-center">
+            <div class="col-lg-5">
+              <h2 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 1.5rem;">A falha no cálculo</h2>
+              <p style="font-size: 1.1rem; line-height: 1.6;">
+                Nexus não consegue prever decisões verdadeiramente irracionais. Pessoas que agem por <strong style="color: #ffd700;">emoção</strong>, <strong style="color: #ffd700;">improviso</strong> ou <strong style="color: #ffd700;">sacrifício</strong> escapam de seus cálculos.
               </p>
             </div>
-            <div class="col-lg-7 reveal" data-parallax="-0.06">
-              <div class="nx-terminal">
-                <div class="nx-terminal-bar">
-                  <span></span><span></span><span></span>
-                  <small>nexus@novaris:~/predict</small>
-                </div>
-                <pre class="mb-0" id="terminal"></pre>
+            <div class="col-lg-7">
+              <div style="background-color: #0a0a0a; padding: 1.5rem; border-radius: 8px; border: 1px solid #333; font-family: monospace;">
+                <div style="color: #888; margin-bottom: 1rem;">nexus@novaris:~/predict $</div>
+                <pre style="color: #7c3aed; margin: 0; white-space: pre-wrap; word-wrap: break-word;">ERROR: Cálculo indeterminável
+Variável: emoção_humana = INDEFINIDA
+Status: Sistema de previsão = 47% acurácia
+Conclusão: Humanos ≠ Máquinas</pre>
               </div>
             </div>
           </div>
-          <p class="nx-bigquote nx-bigquote-sm text-center mt-5 reveal" data-parallax="0.1">
-            Quanto mais Nexus tenta eliminar a imprevisibilidade humana, mais se torna incapaz de compreender
-            aquilo que torna os humanos diferentes das máquinas.
+          <p style="font-size: 1.2rem; text-align: center; margin-top: 3rem; font-style: italic;">
+            Quanto mais Nexus tenta eliminar a imprevisibilidade humana, mais se torna incapaz de compreender aquilo que torna os humanos diferentes das máquinas.
           </p>
         </div>
       </section>
     </main>
 
-    <footer class="nx-footer">
-      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
-        <div class="d-flex align-items-center gap-2">
-          <svg class="nx-logo" aria-hidden="true"><use href="#nexus-symbol" /></svg>
-          <span class="nx-mono">NEXUS // Novaris</span>
+    <footer style=”background-color: #1a1a1a; padding: 2rem 0; border-top: 1px solid #333;”>
+      <div class=”container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3”>
+        <div>
+          <span style=”font-weight: bold;”>NEXUS // Novaris</span>
         </div>
-        <p class="nx-mono mb-0">“Se tudo pode ser conectado, tudo pode ser controlado.”</p>
+        <p style=”margin: 0; color: #b0b0b0;”>”Se tudo pode ser conectado, tudo pode ser controlado.”</p>
       </div>
     </footer>
 
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
+      src=”https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js”
+      integrity=”sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI”
+      crossorigin=”anonymous”
     ></script>
-    <script src="script.js"></script>
+    <script src=”script.js”></script>
   </body>
 </html>
